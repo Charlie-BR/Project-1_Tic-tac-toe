@@ -16,25 +16,27 @@
 </head>
 
 <body>
+	<div class="container">
 
 	<!-- Title for the page - NBA Pass-Dunk-Go -->
 	<h1>NBA Jam Pass-Dunk-Go</h1>
-
-	<!-- Board to play on -->
-	<button id="Square1" class="gameBoard"></button>
-	<button id="Square2" class="gameBoard"></button>
-	<button id="Square3" class="gameBoard"></button>
-	<button id="Square4" class="gameBoard"></button>
-	<button id="Square5" class="gameBoard"></button>
-	<button id="Square6" class="gameBoard"></button>
-	<button id="Square7" class="gameBoard"></button>
-	<button id="Square8" class="gameBoard"></button>
-	<button id="Square9" class="gameBoard"></button>
-
-
+		<!-- Board to play on -->
+		<div class= "jumbotron">
+			<button id="Square1" class="gameBoard"></button>
+			<button id="Square2" class="gameBoard"></button>
+			<button id="Square3" class="gameBoard"></button>
+			<button id="Square4" class="gameBoard"></button>
+			<button id="Square5" class="gameBoard"></button>
+			<button id="Square6" class="gameBoard"></button>
+			<button id="Square7" class="gameBoard"></button>
+			<button id="Square8" class="gameBoard"></button>
+			<button id="Square9" class="gameBoard"></button>
+		</div>
 <!-- Player 1 -->
 	<!-- player 1 header 2 -->
 	<h2>Player 1</h2>
+	<!-- Team choice logo -->
+	<img src= teamLogo>
 	<!-- player 1 multi picklist dropdown for teams -->
 		<div class="dropdown">
 		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -42,10 +44,10 @@
 		    <span class="caret"></span>
 		  </button>
 		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li><a href="#">Chicago Bulls</a></li>
-		    <li><a href="#">New York Knicks</a></li>
-		    <li><a href="#">Utah Jazz</a></li>
-		    <li><a href="#">Houston Rockets</a></li>
+		    <li id="teamBulls"><a>Chicago Bulls</a></li>
+		    <li id="teamKnicks"><a>New York Knicks</a></li>
+		    <li id="teamJazz"><a>Utah Jazz</a></li>
+		    <li id="teamRockets"><a>Houston Rockets</a></li>
 		  </ul>
 		</div>
 	<!-- Player 1 team selected -->
@@ -59,20 +61,22 @@
 		</div>
 	<!-- player 1 win counter -->
 
+
+
 <!-- Player 2 -->
 	<!-- player 2 header 2 -->
 	<h2>Player 2</h2>
 	<!-- player 2 multi picklist dropdown for teams -->
-<div class="dropdown">
+	<div class="dropdown">
 		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		    Team Selection Player 2
 		    <span class="caret"></span>
 		  </button>
 		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li><a href="#">Chicago Bulls</a></li>
-		    <li><a href="#">New York Knicks</a></li>
-		    <li><a href="#">Utah Jazz</a></li>
-		    <li><a href="#">Houston Rockets</a></li>
+		    <li><a id="teamBulls">Chicago Bulls</a></li>
+		    <li><a id="teamBulls">New York Knicks</a></li>
+		    <li><a id="teamBulls">Utah Jazz</a></li>
+		    <li><a id="teamBulls">Houston Rockets</a></li>
 		  </ul>
 		</div>
 	<!-- Player 1 team selected -->
@@ -89,6 +93,8 @@
 <!-- Rivalry Tracker -->
 	<!-- Rivalry Tracker bar chart based on % wins between player 1 and player 2 -->
 
+<!-- end of container Div -->
+</div>
 
 
 </body>
