@@ -16,79 +16,54 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container-fluid">
 
-	<!-- Title for the page - NBA Pass-Dunk-Go -->
-	<h1>NBA Jam Pass-Dunk-Go</h1>
-		<!-- Board to play on -->
-		<div class= "jumbotron">
-			<button id="Square1" class="gameBoard"></button>
-			<button id="Square2" class="gameBoard"></button>
-			<button id="Square3" class="gameBoard"></button>
-			<button id="Square4" class="gameBoard"></button>
-			<button id="Square5" class="gameBoard"></button>
-			<button id="Square6" class="gameBoard"></button>
-			<button id="Square7" class="gameBoard"></button>
-			<button id="Square8" class="gameBoard"></button>
-			<button id="Square9" class="gameBoard"></button>
+		<!-- Title for the page - NBA Pass-Dunk-Go -->
+		<div class="row">
+			<h1>NBA Jam Pass-Dunk-Go</h1>
+			
 		</div>
-<!-- Player 1 -->
-	<!-- player 1 header 2 -->
-	<h2>Player 1</h2>
-	<!-- Team choice logo -->
-	<img src= teamLogo>
-	<!-- player 1 multi picklist dropdown for teams -->
-		<div class="dropdown">
-		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-		    Team Selection Player 1
-		    <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li id="teamBulls"><a>Chicago Bulls</a></li>
-		    <li id="teamKnicks"><a>New York Knicks</a></li>
-		    <li id="teamJazz"><a>Utah Jazz</a></li>
-		    <li id="teamRockets"><a>Houston Rockets</a></li>
-		  </ul>
-		</div>
-	<!-- Player 1 team selected -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Panel title</h3>
-		  </div>
-		  <div class="panel-body">
-		    Panel content
-		  </div>
-		</div>
+			<!-- Board to play on -->
+			<div class= "jumbotron">
+				<button id="Square1" class="gameBoard"></button>
+				<button id="Square2" class="gameBoard"></button>
+				<button id="Square3" class="gameBoard"></button>
+				<button id="Square4" class="gameBoard"></button>
+				<button id="Square5" class="gameBoard"></button>
+				<button id="Square6" class="gameBoard"></button>
+				<button id="Square7" class="gameBoard"></button>
+				<button id="Square8" class="gameBoard"></button>
+				<button id="Square9" class="gameBoard"></button>
+			</div>
+	<!-- Player 1 -->
+		<!-- player 1 header 2 -->
+		<h2>Player 1</h2>
+		
+		<!-- Player 1 team selection -->
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Team Selection</h3>
+			  </div>
+			  <!-- player 1 multi picklist dropdown for teams -->
+				<div class="btn-group">
+				  <button type="button" class="btn btn-danger">Action</button>
+				  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <span class="caret"></span>
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu">
+				    <li id="teamBulls"><a href="#">Chicago Bulls</a></li>
+				    <li id="teamKnicks"><a href="#">New York Knicks</a></li>
+				    <li id="teamJazz"><a href="#">Utah Jazz</a></li>
+				    <li id="teamRockets"><a href="#">Houston Rockets</a></li>
+				  </ul>
+				</div>
+		  
+				 <div id="teamLogo1" class="panel-body">
+				  		<img src="images/Bulls.png"><!-- Team choice logo -->
+				 </div>
+			</div>
 	<!-- player 1 win counter -->
-
-
-
-<!-- Player 2 -->
-	<!-- player 2 header 2 -->
-	<h2>Player 2</h2>
-	<!-- player 2 multi picklist dropdown for teams -->
-	<div class="dropdown">
-		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-		    Team Selection Player 2
-		    <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li><a id="teamBulls">Chicago Bulls</a></li>
-		    <li><a id="teamBulls">New York Knicks</a></li>
-		    <li><a id="teamBulls">Utah Jazz</a></li>
-		    <li><a id="teamBulls">Houston Rockets</a></li>
-		  </ul>
-		</div>
-	<!-- Player 1 team selected -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Panel title Player 2</h3>
-		  </div>
-		  <div class="panel-body">
-		    Panel content Player 2
-		  </div>
-		</div>
-	<!-- player 2 win counter -->
 
 <!-- Rivalry Tracker -->
 	<!-- Rivalry Tracker bar chart based on % wins between player 1 and player 2 -->

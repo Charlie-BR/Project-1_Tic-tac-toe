@@ -4,3 +4,7 @@
 
 /*left side column changes color based on team selected*/
 /*right side column changes color based on team selected*/
+
+.btn-group{
+	padding:20px 0 0 10px;
+}
