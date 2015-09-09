@@ -9,6 +9,10 @@
 	padding:20px 0 0 10px;
 }
 
-.panel{
-	width: 33%
+
+.gameBoard{
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	margin: 0 auto;
 }

@@ -19,21 +19,29 @@
 	<div class="container">
 
 		<!-- Title for the page - NBA Pass-Dunk-Go -->
-		<div class="row">
+		<div class="row row0">
 			<h1>NBA Jam Pass-Dunk-Go</h1>
 		</div>
 			<!-- Board to play on -->
-		<div class="row">	
-			<div class= "jumbotron" class="col-md-6">
-				<button id="Square1" class="gameBoard"></button>
-				<button id="Square2" class="gameBoard"></button>
-				<button id="Square3" class="gameBoard"></button>
-				<button id="Square4" class="gameBoard"></button>
-				<button id="Square5" class="gameBoard"></button>
-				<button id="Square6" class="gameBoard"></button>
-				<button id="Square7" class="gameBoard"></button>
-				<button id="Square8" class="gameBoard"></button>
-				<button id="Square9" class="gameBoard"></button>
+		<div class="row row1">	
+			<div class= "jumbotron">
+				<div class = "row row2" "col-md-4">
+					<button id="Square1" class="gameBoard"></button>
+					<button id="Square2" class="gameBoard"></button>
+					<button id="Square3" class="gameBoard"></button>
+				</div>
+				
+				<div class = "row row3">	
+					<button id="Square4" class="gameBoard"></button>
+					<button id="Square5" class="gameBoard"></button>
+					<button id="Square6" class="gameBoard"></button>
+				</div>
+
+				<div class = "row row4">
+					<button id="Square7" class="gameBoard"></button>
+					<button id="Square8" class="gameBoard"></button>
+					<button id="Square9" class="gameBoard"></button>
+				</div>
 			</div>
 		</div>
 	<!-- Player 1 -->
@@ -47,16 +55,16 @@
 			  </div>
 			  <!-- player 1 multi picklist dropdown for teams -->
 				<div class="btn-group">
-				  <button type="button" class="btn btn-danger">Action</button>
+				  <button class="btn btn-danger">Select your team</button>
 				  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <span class="caret"></span>
 				    <span class="sr-only">Toggle Dropdown</span>
 				  </button>
 				  <ul class="dropdown-menu">
-				    <li id="teamBulls">Chicago Bulls</li>
-				    <li id="teamKnicks">New York Knicks</li>
-				    <li id="teamJazz">Utah Jazz</li>
-				    <li id="teamRockets">Houston Rockets</li>
+				    <li role="button" id="teamBulls">Chicago Bulls</li>
+				    <li role="button" id="teamKnicks">New York Knicks</li>
+				    <li role="button" id="teamJazz">Utah Jazz</li>
+				    <li role="button" id="teamRockets">Houston Rockets</li>
 				  </ul>
 				</div>
 		  
