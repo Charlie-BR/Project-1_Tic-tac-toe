@@ -16,15 +16,15 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container">
 
 		<!-- Title for the page - NBA Pass-Dunk-Go -->
 		<div class="row">
 			<h1>NBA Jam Pass-Dunk-Go</h1>
-			
 		</div>
 			<!-- Board to play on -->
-			<div class= "jumbotron">
+		<div class="row">	
+			<div class= "jumbotron" class="col-md-6">
 				<button id="Square1" class="gameBoard"></button>
 				<button id="Square2" class="gameBoard"></button>
 				<button id="Square3" class="gameBoard"></button>
@@ -35,6 +35,7 @@
 				<button id="Square8" class="gameBoard"></button>
 				<button id="Square9" class="gameBoard"></button>
 			</div>
+		</div>
 	<!-- Player 1 -->
 		<!-- player 1 header 2 -->
 		<h2>Player 1</h2>
@@ -52,15 +53,19 @@
 				    <span class="sr-only">Toggle Dropdown</span>
 				  </button>
 				  <ul class="dropdown-menu">
-				    <li id="teamBulls"><a href="#">Chicago Bulls</a></li>
-				    <li id="teamKnicks"><a href="#">New York Knicks</a></li>
-				    <li id="teamJazz"><a href="#">Utah Jazz</a></li>
-				    <li id="teamRockets"><a href="#">Houston Rockets</a></li>
+				    <li id="teamBulls">Chicago Bulls</li>
+				    <li id="teamKnicks">New York Knicks</li>
+				    <li id="teamJazz">Utah Jazz</li>
+				    <li id="teamRockets">Houston Rockets</li>
 				  </ul>
 				</div>
 		  
 				 <div id="teamLogo1" class="panel-body">
-				  		<img src="images/Bulls.png"><!-- Team choice logo -->
+				 	<!-- Team choice logo -->
+				  		<img src="images/Bulls.png" class="img-rounded">
+				  		<img src="images/Jazz.png" class="img-rounded">
+				  		<img src="images/Knicks.png" class="img-rounded">
+				  		<img src="images/Rockets.png" class="img-rounded">
 				 </div>
 			</div>
 	<!-- player 1 win counter -->
