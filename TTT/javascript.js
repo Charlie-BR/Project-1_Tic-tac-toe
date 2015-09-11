@@ -1,22 +1,31 @@
 $(document).ready(function(){
     var turnCount=0;
+    var turnSwitch=0;
     
       $('#board').find('td').on('click', function(){
-            if (turnCount % 2 === 0){
-              $(this).text('X'); 
-              checkVictory('X');
-            } else {
-           //player 2's turn (O)
-              $(this).text('O');
-              checkVictory('O');
+        turnCount++;
+        turnSwitch++;
+            if ($(this).hasClass('deny')) {
+                turnSwitch--;
+                return;
+            };
+            if (turnCount === 10){
+                alert("Bob's cats got the game!")
             }
-          turnCount++; 
-          if (turnCount > 9;){
-          	alert("Bob's cat's got the game!")
-          }    
+            else if (turnCount % 2 === 0){
+              $(this).text('X'); 
+              $(this).addClass('deny')
+              winYet('X');
+            } 
+            //player 2's turn (O)
+            else {
+              $(this).text('O');
+              $(this).addClass('deny')
+              winYet('O');
+            } 
       });
-     
-    function checkVictory(player){
+    
+    function winYet(player){
        //top row check
         if ($('#board').find('#1').text() !== ''){
             if ($('#board').find('#1').text() == $('#board').find('#2').text()) {
@@ -59,7 +68,7 @@ $(document).ready(function(){
                     $('#newGame').removeClass('invisible');
                 }
             }
-            //right diag check
+        //right diag check
             if ($('#board').find('#3').text() == $('#board').find('#5').text()) {
                 if ($('#board').find('#3').text() == $('#7').text()) {
                     alert('Game over! '+player+' is the winner!');
@@ -92,6 +101,7 @@ $(document).ready(function(){
     }
     $('#newGame').on('click',function(){
         $('.square').text('');
+        $('.square').removeClass('deny');
     });
 
 });
