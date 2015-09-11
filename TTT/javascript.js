@@ -4,18 +4,17 @@ $(document).ready(function(){
       $('#board').find('td').on('click', function(){
             if (turnCount % 2 === 0){
               $(this).text('X'); 
-              checkVictory('X');
+              winYet('X');
             } else {
            //player 2's turn (O)
               $(this).text('O');
-              checkVictory('O');
+              winYet('O');
             }
           turnCount++;
           
       });
-     
     
-    function checkVictory(player){
+    function winYet(player){
        //top row check
         if ($('#board').find('#1').text() !== ''){
             if ($('#board').find('#1').text() == $('#board').find('#2').text()) {
