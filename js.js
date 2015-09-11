@@ -10,11 +10,12 @@ $(document).ready(function(){
               $(this).text('O');
               checkVictory('O');
             }
-          turnCount++;
-          
+          turnCount++; 
+          if (turnCount > 9;){
+          	alert("Bob's cat's got the game!")
+          }    
       });
      
-    
     function checkVictory(player){
        //top row check
         if ($('#board').find('#1').text() !== ''){
